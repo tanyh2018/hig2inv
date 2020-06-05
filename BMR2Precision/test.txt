@@ -1,0 +1,374 @@
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00022.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00073.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00094.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00014.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00099.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00062.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00090.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00038.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00063.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00007.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00009.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00040.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00085.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00018.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00019.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00002.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00050.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00072.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00034.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00001.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00033.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00012.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00010.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00031.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00048.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00020.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00087.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00042.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00092.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00077.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00035.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00083.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00051.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00043.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00054.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00057.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00003.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00044.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00079.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00069.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00081.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00026.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00049.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00078.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00086.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00060.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00017.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00004.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00052.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00089.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00030.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00037.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00058.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00076.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00027.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00093.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00015.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00080.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00036.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00055.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00047.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00053.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00006.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00066.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00045.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00005.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00097.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00068.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00024.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00008.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00041.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00032.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00021.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00059.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00011.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00070.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00046.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00056.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00023.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00088.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00098.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00075.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00096.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00067.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00039.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00064.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00071.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00074.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00028.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00084.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00029.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00095.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00025.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00013.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00016.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00061.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00091.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00082.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00065.stdhep
+nEvt 17980.000000
+ratio 0.066240
+ratio /cefs/higgs/yudan/stdhep/zz_inv/zz_sl0nu_up.e0.p0.00001.stdhep
+ratio /cefs/higgs/yudan/stdhep/zz_inv/zz_sl0nu_up.e0.p0.00002.stdhep
+nEvt 20000.000000
+ratio 1.000000
+S/B = -nan
+Pre  0.004582
+S/B = -nan
+Pre  0.004658
+S/B = -nan
+Pre  0.004753
+S/B = -nan
+Pre  0.004863
+S/B = -nan
+Pre  0.005036
+S/B = -nan
+Pre  0.005325
+S/B = -nan
+Pre  0.005775
+S/B = -nan
+Pre  0.006352
+S/B = -nan
+Pre  0.007057
+S/B = -nan
+Pre  0.007693
+S/B = -nan
+Pre  0.008331
+S/B = -nan
+Pre  0.009007
+S/B = -nan
+Pre  0.009641
+S/B = -nan
+Pre  0.010190
+S/B = -nan
+Pre  0.010744
+S/B = -nan
+Pre  0.011128
+S/B = -nan
+Pre  0.011723
+S/B = -nan
+Pre  0.011943
+S/B = -nan
+Pre  0.012359
+S/B = -nan
+Pre  0.012573
+S/B = -nan
+Pre  0.012909
+S/B = -nan
+Pre  0.013197
+S/B = -nan
+Pre  0.013316
+S/B = -nan
+Pre  0.013404
+S/B = -nan
+Pre  0.013772
+S/B = -nan
+Pre  0.013915
+S/B = -nan
+Pre  0.014023
+S/B = -nan
+Pre  0.014091
+S/B = -nan
+Pre  0.014218
+S/B = -nan
+Pre  0.014479
+S/B = -nan
+Pre  0.014460
+S/B = -nan
+Pre  0.014533
+S/B = -nan
+Pre  0.014632
+S/B = -nan
+Pre  0.014808
+S/B = -nan
+Pre  0.014733
+S/B = -nan
+Pre  0.014937
+S/B = -nan
+Pre  0.014973
+S/B = -nan
+Pre  0.015090
+S/B = -nan
+Pre  0.015096
+S/B = -nan
+Pre  0.015156
+S/B = -nan
+Pre  0.015254
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00022.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00073.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00094.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00014.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00099.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00062.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00090.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00038.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00063.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00007.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00009.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00040.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00085.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00018.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00019.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00002.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00050.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00072.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00034.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00001.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00033.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00012.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00010.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00031.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00048.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00020.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00087.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00042.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00092.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00077.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00035.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00083.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00051.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00043.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00054.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00057.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00003.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00044.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00079.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00069.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00081.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00026.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00049.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00078.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00086.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00060.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00017.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00004.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00052.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00089.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00030.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00037.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00058.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00076.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00027.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00093.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00015.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00080.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00036.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00055.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00047.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00053.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00006.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00066.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00045.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00005.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00097.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00068.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00024.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00008.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00041.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00032.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00021.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00059.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00011.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00070.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00046.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00056.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00023.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00088.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00098.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00075.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00096.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00067.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00039.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00064.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00071.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00074.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00028.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00084.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00029.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00095.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00025.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00013.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00016.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00061.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00091.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00082.stdhep
+ratio /cefs/higgs/yudan/stdhep/qqh/qqh_X.e0.p0.00065.stdhep
+nEvt 17980.000000
+ratio 0.066240
+ratio /cefs/higgs/yudan/stdhep/zz_inv/zz_sl0nu_up.e0.p0.00001.stdhep
+ratio /cefs/higgs/yudan/stdhep/zz_inv/zz_sl0nu_up.e0.p0.00002.stdhep
+nEvt 20000.000000
+ratio 1.000000
+S/B = -nan
+Pre  0.004582
+S/B = -nan
+Pre  0.004658
+S/B = -nan
+Pre  0.004753
+S/B = -nan
+Pre  0.004863
+S/B = -nan
+Pre  0.005036
+S/B = -nan
+Pre  0.005325
+S/B = -nan
+Pre  0.005775
+S/B = -nan
+Pre  0.006352
+S/B = -nan
+Pre  0.007057
+S/B = -nan
+Pre  0.007693
+S/B = -nan
+Pre  0.008331
+S/B = -nan
+Pre  0.009007
+S/B = -nan
+Pre  0.009641
+S/B = -nan
+Pre  0.010190
+S/B = -nan
+Pre  0.010744
+S/B = -nan
+Pre  0.011128
+S/B = -nan
+Pre  0.011723
+S/B = -nan
+Pre  0.011943
+S/B = -nan
+Pre  0.012359
+S/B = -nan
+Pre  0.012573
+S/B = -nan
+Pre  0.012909
+S/B = -nan
+Pre  0.013197
+S/B = -nan
+Pre  0.013316
+S/B = -nan
+Pre  0.013404
+S/B = -nan
+Pre  0.013772
+S/B = -nan
+Pre  0.013915
+S/B = -nan
+Pre  0.014023
+S/B = -nan
+Pre  0.014091
+S/B = -nan
+Pre  0.014218
+S/B = -nan
+Pre  0.014479
+S/B = -nan
+Pre  0.014460
+S/B = -nan
+Pre  0.014533
+S/B = -nan
+Pre  0.014632
+S/B = -nan
+Pre  0.014808
+S/B = -nan
+Pre  0.014733
+S/B = -nan
+Pre  0.014937
+S/B = -nan
+Pre  0.014973
+S/B = -nan
+Pre  0.015090
+S/B = -nan
+Pre  0.015096
+S/B = -nan
+Pre  0.015156
+S/B = -nan
+Pre  0.015254

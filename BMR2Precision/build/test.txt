@@ -1,0 +1,92 @@
+ratio /cefs/higgs/tanyuhang/BMR2Precision/stdhep/ffh_inv/ffh_inv.e0.p0.00002.stdhep
+ratio /cefs/higgs/tanyuhang/BMR2Precision/stdhep/ffh_inv/ffh_inv.e0.p0.00001.stdhep
+nEvt 10000.000000
+ratio 0.671900
+ratio /cefs/higgs/tanyuhang/BMR2Precision/stdhep/bkg/zz_sl0nu_up.e0.p0.00001.stdhep
+ratio /cefs/higgs/tanyuhang/BMR2Precision/stdhep/bkg/zz_sl0nu_down.e0.p0.00001.stdhep
+ratio /cefs/higgs/tanyuhang/BMR2Precision/stdhep/bkg/zz_sl0nu_down.e0.p0.00002.stdhep
+ratio /cefs/higgs/tanyuhang/BMR2Precision/stdhep/bkg/zz_sl0nu_up.e0.p0.00002.stdhep
+nEvt 60000.000000
+ratio 1.000000
+S/B = -nan
+Pre  0.001618
+S/B = -nan
+Pre  0.001628
+S/B = -nan
+Pre  0.001640
+S/B = -nan
+Pre  0.001653
+S/B = -nan
+Pre  0.001675
+S/B = -nan
+Pre  0.001725
+S/B = -nan
+Pre  0.001795
+S/B = -nan
+Pre  0.001880
+S/B = -nan
+Pre  0.001964
+S/B = -nan
+Pre  0.002064
+S/B = -nan
+Pre  0.002147
+S/B = -nan
+Pre  0.002238
+S/B = -nan
+Pre  0.002326
+S/B = -nan
+Pre  0.002412
+S/B = -nan
+Pre  0.002467
+S/B = -nan
+Pre  0.002525
+S/B = -nan
+Pre  0.002584
+S/B = -nan
+Pre  0.002634
+S/B = -nan
+Pre  0.002678
+S/B = -nan
+Pre  0.002727
+S/B = -nan
+Pre  0.002761
+S/B = -nan
+Pre  0.002795
+S/B = -nan
+Pre  0.002841
+S/B = -nan
+Pre  0.002849
+S/B = -nan
+Pre  0.002859
+S/B = -nan
+Pre  0.002889
+S/B = -nan
+Pre  0.002910
+S/B = -nan
+Pre  0.002939
+S/B = -nan
+Pre  0.002944
+S/B = -nan
+Pre  0.002976
+S/B = -nan
+Pre  0.002983
+S/B = -nan
+Pre  0.003004
+S/B = -nan
+Pre  0.003004
+S/B = -nan
+Pre  0.003034
+S/B = -nan
+Pre  0.003041
+S/B = -nan
+Pre  0.003061
+S/B = -nan
+Pre  0.003056
+S/B = -nan
+Pre  0.003099
+S/B = -nan
+Pre  0.003101
+S/B = -nan
+Pre  0.003113
+S/B = -nan
+Pre  0.003113
