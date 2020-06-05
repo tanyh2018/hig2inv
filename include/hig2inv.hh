@@ -6,8 +6,10 @@
 #include <EVENT/LCFloatVec.h> 
 #include <EVENT/MCParticle.h> 
 #include <marlin/Processor.h>
+#include <EVENT/Cluster.h>
 #include <EVENT/ReconstructedParticle.h>
 #include <IMPL/MCParticleImpl.h>
+#include <IMPL/ClusterImpl.h>
 #include <UTIL/PIDHandler.h>
 #include <EVENT/LCFloatVec.h>
 #include <EVENT/LCParameters.h>
@@ -54,7 +56,8 @@ class hig2inv  : public marlin::Processor {
         LCCollection* Col_WoLeps;
         LCCollection* Col_FJPList2;
         LCCollection* Col_Jets;
-        LCCollection* Col_Leps; 
+        LCCollection* Col_Leps;
+
         TFile *m_file;
         TTree *m_tree;
         TH1F *h_evtflw;
@@ -63,10 +66,10 @@ class hig2inv  : public marlin::Processor {
 
         int LeptonID, RecoPID, tmpPID, PhotonPID, ElectronPID, MuonPID, NeutrinoEPID, NeutrinoMuonPID, TauPID, NeutrinoTauPID, ZPID, HiggsPID,ClusterID;
         int Dquark, Uquark, Squark, Cquark, Bquark,WPID;
-        int nMC,nReco,nLepton, NCandiP, NCandiM, NParent, NDaughter, nDaughter, DIndex;
+        int nMC,nReco,nClus,nLepton, NCandiP, NCandiM, NParent, NDaughter, nDaughter, DIndex;
         int OverWrite,DecayFlag;
         float RecoEMax, RecoEMin, ZMass;
-        int m_n_gamma, m_n_charged, m_n_lepton,m_n_leptonp, m_n_leptonm, m_n_chargedp, m_n_chargedm, m_n_Higgsdaughter, m_n_neutral,m_n_neutrino,m_Neutral_PID;
+        int m_n_gamma, m_n_charged, m_n_lepton,m_n_leptonp, m_n_leptonm, m_n_chargedp, m_n_chargedm, m_n_Higgsdaughter, m_n_neutral,m_n_neutrino;
         int Nmup;
         int Nmum;
         unsigned int m_event;
@@ -105,11 +108,13 @@ class hig2inv  : public marlin::Processor {
         float m_minpy_muon;
         float m_minpz_muon;
         float m_minpe_muon;
+        float m_total_clu_energy;
 
         float m_maxpx_electron;
         float m_maxpy_electron;
         float m_maxpz_electron;
         float m_maxpe_electron;
+        float m_mc_maxpe_electron;
 
         float m_minpx_electron;
         float m_minpy_electron;
@@ -158,6 +163,7 @@ class hig2inv  : public marlin::Processor {
 
 
         std::vector<float>  m_px_muon;
+        std::vector<float>  m_e_charged;
         std::vector<float>  m_py_muon;
         std::vector<float>  m_pz_muon;
         std::vector<float>  m_pe_muon;
@@ -165,15 +171,16 @@ class hig2inv  : public marlin::Processor {
         std::vector<float>  m_py_electron;
         std::vector<float>  m_pz_electron;
         std::vector<float>  m_pe_electron;
-
+        std::vector<int> m_Neutral_PID;
+        std::vector<int> m_charged_PID;
         // TLorentzVector P_P, P_M, P_T[11];
         std::vector<TLorentzVector> P4_Muon;  
 
         std::vector<TLorentzVector> P4_Electron;  
 
 
-        TLorentzVector P4_Neutral_Sum,P4_Charged_Sum,P_P, P_M, P_T, miss, FourMin_Lepton, FourMax_Lepton,P4_sum_p_photon;
-        std::vector<TLorentzVector> FourMom_LeptonP, FourMom_LeptonM, FourMom_ChargedP, FourMom_ChargedM, FourMom_Charged, FourMom_Gamma,CandiP, CandiM;
+        TLorentzVector P4_Neutral_Sum,P4_Charged_Sum,P_P, P_M, P_T, miss, FourMin_Lepton, FourMax_Lepton,P4_sum_p_photon,P4_sum_p_501,P4_sum_p_21120,P4_MC_neutral_sum,P4_MC_photon_sum,P4_MC_muon_sum,P4_MC_electron_sum,P4_MC_charge_sum;
+        std::vector<TLorentzVector> FourMom_LeptonP, FourMom_LeptonM,FourMom_ElectronP,FourMom_ElectronM, FourMom_ChargedP, FourMom_ChargedM, FourMom_Charged, FourMom_Gamma,CandiP, CandiM;
 
 
         // jet info
@@ -200,13 +207,59 @@ class hig2inv  : public marlin::Processor {
         std::vector<float> m_dijet_dang;
 //Tau information
 
-        // MC info 
+        // MC info  
         std::vector<int> m_mc_pdgid;
         std::vector<int> m_mc_init_pdgid;
         std::vector<TLorentzVector> P4_MCTruth_LeptonPlus;  
         std::vector<TLorentzVector> P4_MCTruth_LeptonMinus;
         std::vector<TLorentzVector> P4_MCTruth_photon;
         std::vector<TLorentzVector> P4_MCTruth_Higgs;   
+
+        //merge three background data 
+         
+
+
+        std::vector<TLorentzVector> P4_MCTruth_qq_electron;  
+        std::vector<TLorentzVector> P4_MCTruth_qq_muon;  
+        std::vector<TLorentzVector> P4_MCTruth_qq_photon;  
+        std::vector<TLorentzVector> P4_MCTruth_qq_neutral;
+        std::vector<TLorentzVector> P4_MCTruth_qq_charge;
+
+        std::vector<int> m_mc_nparents;  
+        std::vector<int> m_mc_ndaughters;  
+        std::vector<int> m_mc_charge;  
+        
+        int mc_n_qq_neutral;
+        int mc_n_qq_photon;
+        int mc_n_qq_muon;
+        int mc_n_qq_electron;
+        int mc_n_qq_charge;
+
+        float m_sum_muon_e;
+        float m_sum_electron_e;
+        float m_sum_e_neutral;
+        float m_sum_e_charged;
+        float m_sum_e_photon;
+        float m_sum_e_501;
+        float m_sum_e_21120;
+
+        float m_mc_m_visible;
+        float m_mc_energy_visible;
+        float m_mc_visible_pt;
+        float m_mc_visible_p;
+        float m_mc_miss_e;
+        float m_mc_miss_m;
+        float m_mc_sum_muon_e;
+        float m_mc_sum_muon_m;
+        float m_mc_sum_electron_e;
+        float m_mc_sum_electron_m;
+        float m_mc_sum_photon_e;
+        float m_mc_sum_photon_m;
+
+        float m_mc_sum_charge_e;
+        float m_mc_sum_charge_m;
+        float m_mc_sum_neutral_e;
+        float m_mc_sum_neutral_m;           
 
         int m_mc_lepton_minus_id;
         int m_mc_lepton_plus_id;
@@ -246,6 +299,15 @@ class hig2inv  : public marlin::Processor {
         int mc_n_charge;
         int m_mc_init_n_photon;
         std::vector<float> m_mc_init_photon_e;
+        //merge three background data analysis
+
+        std::vector<float> m_mc_init_qq_electron_e;
+        std::vector<float> m_mc_init_qq_muon_e;
+        std::vector<float> m_mc_init_qq_photon_e;
+        std::vector<float> m_mc_init_qq_neutral_e;
+        std::vector<float> m_mc_init_qq_charge_e;
+
+
         std::vector<float> m_mc_init_photon_p;
         std::vector<float> m_mc_init_photon_pt;
         std::vector<float> m_mc_init_photon_pz;
@@ -319,6 +381,7 @@ class hig2inv  : public marlin::Processor {
         float _qqRecoilM;
         float _TauTauM,_qqM,_MCqqM;
         float _D0, _Z0;
+        float tmp_energy;
         int _nRecoTau, _nRecoP;
         float _visEp,_visEm,_invMp,_invMm,_MCvisEp,_MCvisEm;
         float _visPp[3];	
@@ -342,11 +405,11 @@ class hig2inv  : public marlin::Processor {
         void saveDiElectron(std::vector<TLorentzVector> FourMom_IsoEletronP,std::vector<TLorentzVector> FourMom_IsoEletronM);
         void saveDiMuon(std::vector<TLorentzVector> FourMom_IsoMuonP,std::vector<TLorentzVector> FourMom_IsoMuonM);
         void saveVisible(TLorentzVector P4_Neutral_Sum,TLorentzVector P4_Charged_Sum);
-        void saveMinAndMaxLepton(std::vector<TLorentzVector> FourMom_LeptonP, std::vector<TLorentzVector> FourMom_LeptonM);	
+        void saveMinAndMaxLepton(std::vector<TLorentzVector> FourMom_MuonP, std::vector<TLorentzVector> FourMom_MuonM);	
         int getPID(ReconstructedParticle* a_Reco);	
-        void saveRecInfo(std::vector<TLorentzVector> FourMom_LeptonP, std::vector<TLorentzVector> FourMom_LeptonM);
-        void saveMuonIf(std::vector<TLorentzVector> P4_Muon,std::vector<TLorentzVector> P4_jet);		
-        void saveElectronIf(std::vector<TLorentzVector> P4_Electron,std::vector<TLorentzVector> P4_jet);		
+        void saveRecInfo(std::vector<TLorentzVector> FourMom_MuonP, std::vector<TLorentzVector> FourMom_MuonM);
+        void saveMuonIf(std::vector<TLorentzVector> P4_Muon,std::vector<TLorentzVector> P4_Jet);		
+        void saveElectronIf(std::vector<TLorentzVector> P4_Electron,std::vector<TLorentzVector> P4_Jet);		
         //Save qqH channel
         void saveFastJet(LCCollection* col_FastJet);
         void saveJetInfo( std::vector<TLorentzVector> P4_jet );
@@ -359,6 +422,7 @@ class hig2inv  : public marlin::Processor {
         //tau information 
         void RecoAna( LCEvent * evtP );
         void fillMCInfo();
+        void fillMCqqInfo();
         void variable_init();
 
 };
