@@ -1329,10 +1329,10 @@ namespace {
     };
     static const char* includePaths[] = {
 "/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/boost/boost-1.60.0-python2.7-x86_64-slc6-gcc49/boost-1.60.0-python2.7-x86_64-slc6-gcc49/include/",
-"/afs/ihep.ac.cn/users/z/zhangkl/cepcFit",
+"/cefs/higgs/tanyuhang/hig2inv/calculate/cepcFit",
 "inc",
 "/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.16-HiggsComb-x86_64-slc6-gcc49-opt/include",
-"/afs/ihep.ac.cn/users/z/zhangkl/cepcFit/",
+"/cefs/higgs/tanyuhang/hig2inv/calculate/cepcFit/",
 0
     };
     static const char* fwdDeclCode = 

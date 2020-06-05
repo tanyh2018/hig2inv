@@ -8,18 +8,18 @@
 
 
 
-#define DEBUG 1 // to 1: more details 
+#define DEBUG 0 // to 1: more details 
 #include "head.h" 
 using namespace std;
 using namespace RooFit; 
 using namespace RooStats;
 
 RooWorkspace *makespace(TString cname, int index)
-{
+{ 
     RooMsgService::instance().setGlobalKillBelow(RooFit::FATAL);
 
 
-    channel c=channelbyname(cname); 
+    channel c=channelbyname(cname);  
     checkcname(cname);
 
     n_sig =  c.nsig;
@@ -156,10 +156,10 @@ RooWorkspace *makespace(TString cname, int index)
 	obs_plus_wt->add(*wchannel->set("Observables"));
 	RooDataSet *AsimovSB =  new RooDataSet("AsimovSB", "AsimovSB", *obs_plus_wt, WeightVar(wt));
 
-	Float_t npoints = 1000;
+	Float_t npoints = 500;
 	Float_t total_SBevents = 0;
 
-	if ( isinvi ) npoints*= 10;
+	if ( isinvi ) npoints*= 20;
 
 	for (int i = 0; i < n_sig; i++) total_SBevents += (*wchannel->function("n_s_" + cname)).getVal();
 	// if ( n_bkg != 0)   total_SBevents += (*wchannel->var("n_b_" + cname)).getVal();

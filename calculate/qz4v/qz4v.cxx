@@ -2,11 +2,11 @@
 //
 // Description: get constant quality of Higgs    
 //
-// Original Author:  tanyh <tanyuhang@ihep.ac.cn>
+// Original Author:  tanyh <tanyuhang@ihep.ac.cn> 
 //         Created:  [2019-03-04 ] 
 //         Inspired by Kaili's code   
 
-
+  
 
 #include <cstdlib>
 #include <vector>
@@ -76,7 +76,7 @@ double sum=0;
  {
      data->GetEntry(ievt);
 
-     if (b.Contains("s")) weight=0.00212;
+     if (b.Contains("s")) weight=0.00106/0.5;
      if (b.Contains("b")) weight=1;
      sum+=weight;
 

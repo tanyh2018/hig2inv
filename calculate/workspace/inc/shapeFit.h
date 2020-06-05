@@ -11,9 +11,10 @@
    
 const int Nch = 3;  
 const TString m_CN[Nch] = {  
-                                "qz4v", 
                                 "ez4v",
-								"mz4v",      
+								"mz4v",  
+                                "qz4v", 
+    
 								};
 							
 typedef struct channel
@@ -38,14 +39,14 @@ const channel c[3]=
             {"s",   "data/hinvi/qz4v_sig.root"}
         }
     },
-    {   "ez4v", 1, 1, 120, 150,
+    {   "ez4v", 1, 1, 120, 170,
         "data/hinvi/ez4v_bkg.root",
         {"s"},
         {
             {"s",   "data/hinvi/ez4v_sig.root"}
         }
     },
-    {   "mz4v", 1, 1, 120, 135,
+    {   "mz4v", 1, 1, 120, 150,
         // "data/hinvi/invi_mm_bkg.root",
         "data/hinvi/mz4v_bkg.root",
         {"s"},
@@ -95,9 +96,9 @@ const map<TString, TString> varname=
 };
 const map<TString, Float_t> histomax=
 {
-    {"qz4v",10000},
-    {"ez4v",800 },
-    {"mz4v",300 }
+    {"qz4v",30000},
+    {"ez4v",2000 },
+    {"mz4v",500 }
 
 };
 TString funcsetting(TString cname, TString proc)
@@ -105,7 +106,7 @@ TString funcsetting(TString cname, TString proc)
     TString f="";
     if (proc=="b")
     {
-        if  (  cname.Contains("mz4v")) f="Voigtian"; 
+        if  (  cname.Contains("mz4v")) f="keys"; 
         if  (  cname.Contains("qz4v")) f="keys";
         if  (  cname.Contains("ez4v")) f="keys";
     }
@@ -114,7 +115,7 @@ TString funcsetting(TString cname, TString proc)
         if (cname.Contains("qz4v") ) f="BifurGuassian";
         // if (cname.Contains("yy") )   f="Voigtian";      //currently yy is Symmetrical.
         if (cname.Contains("ez4v") )   f="DSCB";      //currently yy is Symmetrical.
-        if (cname.Contains("mz4v") )   f="DSCB";      //currently yy is Symmetrical.
+        if (cname.Contains("mz4v") )   f="DSCB";  //DSCB    //currently yy is Symmetrical.
     }
  return f;
 }

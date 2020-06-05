@@ -15,7 +15,7 @@
 #include "inc/fitTool.h" 
 #include "inc/auxUtils.h"  
 #include "TDatime.h"
-#define DEBUG 1 
+#define DEBUG 1  
 
 std::string _outputFile = "";
 std::string _inputFile = "";

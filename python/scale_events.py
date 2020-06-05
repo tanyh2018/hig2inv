@@ -26,6 +26,7 @@ h_evtflw.GetXaxis().SetBinLabel(9,'The ratio of Energy and P<2.4 ')
 
 #root information
 m_event=array('i',[0])
+m_sum_e_501=array('f',[0])
 m_n_neutral=array('i',[0])
 m_sum_p_neutral=array('f',4*[-99]) 
 m_sum_p_photon=array('f',4*[-99])
@@ -256,6 +257,13 @@ _TauTauM=array('f',[0])
 _qqM=array('f',[0])
 _TotalEvtEn=array('f',[0])
 
+#check  two peaks
+#m_sum_e_photon=array('f',[0])
+#m_sum_e_neutral=array('f',[0])
+#m_e_photon=array('f',[0])
+m_sum_e_charged=array('f',[0])
+
+
 def main():
     args=sys.argv[1:]
     infile=args[0]
@@ -278,7 +286,7 @@ def get_weight(event,processname,table_list):
     table = open(table_list , 'r' )
     cross_section=0.
     for s_line in table :
-        if not s_line.startswith('#'):
+        if not s_line.startswith('#'): 
             l = [x.strip() for x in s_line.split(',')] 
             process=l[0]            
             if processname == process:
@@ -301,7 +309,7 @@ def get_weight(event,processname,table_list):
     else:
         cs = float(cross_section)
         weight=IntLum*cs/event_gen
-    print processname,weight
+    print processname,weight,event_gen
     return weight
 def root_information(infile,outfile,weight,event):
     for i in range(0,9):
@@ -408,6 +416,7 @@ def root_information(infile,outfile,weight,event):
     t_in.SetBranchAddress('m_pz_dilepton',m_pz_dilepton)
     t_in.SetBranchAddress('m_pz_leptonm',m_pz_leptonm)
     t_in.SetBranchAddress('m_pz_leptonp',m_pz_leptonp)
+    t_in.SetBranchAddress('m_sum_e_501',m_sum_e_501)
     t_in.SetBranchAddress('m_n_charged',m_n_charged)
     t_in.SetBranchAddress('m_n_gamma',m_n_gamma)
     t_in.SetBranchAddress('m_n_leptonp',m_n_leptonp)
@@ -598,6 +607,11 @@ def root_information(infile,outfile,weight,event):
     t_in.SetBranchAddress("m_muz_theta",  m_muz_theta)
     t_in.SetBranchAddress("n_muon_Ptrack", n_muon_Ptrack)
     t_in.SetBranchAddress("n_muon_Mtrack", n_muon_Mtrack)
+# check two peaks
+    #t_in.SetBranchAddress("m_sum_e_photon", m_sum_e_photon)
+    #t_in.SetBranchAddress("m_sum_e_neutral",  m_sum_e_neutral)
+    #t_in.SetBranchAddress("m_e_photon", m_e_photon)
+    t_in.SetBranchAddress("m_sum_e_charged", m_sum_e_charged)
 
 
     fout=ROOT.TFile(outfile,"RECREATE")
@@ -623,6 +637,7 @@ def root_information(infile,outfile,weight,event):
     t_out.Branch('m_pz_dilepton',m_pz_dilepton,'m_pz_dilepton/F')
     t_out.Branch('m_pz_leptonm',m_pz_leptonm,'m_pz_leptonm/F')
     t_out.Branch('m_pz_leptonp',m_pz_leptonp,'m_pz_leptonp/F')
+    t_out.Branch('m_sum_e_501',m_sum_e_501,'m_sum_e_501/F')
     t_out.Branch('m_n_charged',m_n_charged,'m_n_charged/I')
     t_out.Branch('m_n_gamma',m_n_gamma,'m_n_gamma/I')
     t_out.Branch('m_n_leptonp',m_n_leptonp,'m_n_leptonp/I')
@@ -822,6 +837,14 @@ def root_information(infile,outfile,weight,event):
     t_out.Branch("m_muz_theta",  m_muz_theta,  "m_muz_theta/F")
     t_out.Branch("n_muon_Ptrack", n_muon_Ptrack, "n_muon_Ptrack/F")
     t_out.Branch("n_muon_Mtrack", n_muon_Mtrack, "n_muon_Mtrack/F")
+
+
+    #t_out.Branch('m_sum_e_neutral',m_sum_e_neutral,'m_sum_e_neutral/F')
+    #t_out.Branch('m_sum_e_photon',m_sum_e_photon,'m_sum_e_photon/F')
+    t_out.Branch('m_sum_e_charged',m_sum_e_charged,'m_sum_e_charged/F') 
+    #t_out.Branch('m_e_photon',m_e_photon,'m_e_photon/F')  
+
+    
     for i in xrange(entries):
         if (weight<1):
             rnd=random.random()

@@ -39,7 +39,7 @@ def get_bin_value(inputfile):
     event = []
     for i in range(1,11):
         event.append(h.GetBinContent(i))
-    print event[8]   
+    #print event[8]   
     return event
 
 def get_decay_scale(processname,event,table_list):
@@ -54,7 +54,7 @@ def get_decay_scale(processname,event,table_list):
             process=l[0]            
             if processname == process:
                 cross_section=l[2]
-                print cross_section
+                #print cross_section
     if processname=="e2E2h_invi":
         e2e2H_cross=6.77
         br_Hinv=0.5
@@ -73,12 +73,15 @@ def get_decay_scale(processname,event,table_list):
     else: 
         cs = float(cross_section)
         weight=IntLum*cs/event_gen
-    print processname,weight
+	#print "%s"%(event_gen)
+    
+    print "process=%s,event_gen=%s,weigth=%.3f"%(processname,event_gen,weight)
+    #print processname,weight
     return weight
 #mumuH_inv    
 def write_mumu_after_cut(inputfile,event,scale):
     src = inputfile.split('/')[4]
-    print src
+    #print src
     if re.search('_',src) != None:
         nm1=src.split('_')[0]
         nm2=src.split('_')[1]
@@ -291,7 +294,7 @@ def write_qq_after_cut(inputfile,event,scale):
 def fourf_qq_bkg(src,nm1,nm2,event,scale):
     for i in range(0,10):
         event[i]=event[i]*scale
-    print event[8]
+    #print event[8]
     cwd = os.getcwd()
     out_putname = cwd + '/table/qqH/bin.txt'
     fout_script = open(out_putname,'a')
@@ -331,7 +334,7 @@ def fourf_qq_bkg(src,nm1,nm2,event,scale):
 def twof_qq_bkg(src,event,scale):
     for i in range(0,10):
         event[i]=event[i]*scale
-    print event[8]
+    #print event[8]
     cwd = os.getcwd()
     out_putname = cwd + '/table/qqH/bin.txt' 
     fout_script = open(out_putname,'a')

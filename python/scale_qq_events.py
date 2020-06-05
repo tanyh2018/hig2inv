@@ -28,8 +28,10 @@ h_evtflw.GetXaxis().SetBinLabel(9,'dijet_dphi<175')
 #root information
 m_n_lepton=array('i',[0])
 m_n_neutral=array('i',[0])
-m_Neutral_PID=array('i',[0])		
-m_sum_p_neutral=array('f',4*[-99]) 
+#m_Neutral_PID=array('i',[0])		
+m_sum_p_neutral=array('f',4*[-99])
+m_sum_e_neutral=array('f',[0]) 
+m_sum_e_charged=array('f',[0])  
 m_sum_p_photon=array('f',4*[-99])
 m_e_photon=array('f',[0])
 m_p_leptonp=array('f',4*[-99])
@@ -95,6 +97,12 @@ m_maxp_lepton=array('f',4*[-99])
 
 m_event=array('i',[0])
 m_n_jet=array('i',[0])
+
+
+m_e_charged=ROOT.std.vector(float)()
+m_Neutral_PID=ROOT.std.vector(float)()
+m_charged_PID=ROOT.std.vector(float)()
+
 m_jet_m=ROOT.std.vector(float)()
 m_jet_p=ROOT.std.vector(float)()
 m_jet_pt=ROOT.std.vector(float)() 
@@ -325,13 +333,13 @@ def get_weight(event,processname,table_list):
     else:
         cs = float(cross_section)
         weight=IntLum*cs/event_gen
-    print processname,weight
+    print processname,weight,event_gen
     return weight
 def root_information(infile,outfile,weight,event):
     for i in range(0,9):
         for j in xrange (0,int(event[i]*weight)):
             h_evtflw.Fill(i)
-    h =[0]*100
+    h =[0]*120
     f = ROOT.TFile(infile)
     h[1] = f.Get('before_cut_n_neutral')
     h[2] = f.Get('before_cut_dijet_pt')
@@ -444,7 +452,15 @@ def root_information(infile,outfile,weight,event):
     h[97] = f.Get('after_cut_dijet_p')
     h[98] = f.Get('after_cut_cos_miss')
     h[99] = f.Get('after_cut_vis')
-
+#    h[100] = f.Get('after_cut_n_Electron')    
+#    h[101] = f.Get('after_seventh_cut_n_Electron')
+#    h[102] = f.Get('after_sixth_cut_n_Electron')
+#    h[103] = f.Get('after_fifth_cut_n_Electron')
+#    h[104] = f.Get('after_fourth_cut_n_Electron')
+#    h[105] = f.Get('after_third_cut_n_Electron')
+#    h[106] = f.Get('after_second_cut_n_Electron')
+#    h[107] = f.Get('after_firth_cut_n_Electron')
+#    h[108] = f.Get('before_cut_n_Electron')
 
 
     for i in range(1,100):
@@ -455,8 +471,10 @@ def root_information(infile,outfile,weight,event):
     entries=t_in.GetEntriesFast()
     t_in.SetBranchAddress('m_event',m_event)
     t_in.SetBranchAddress('m_n_neutral',m_n_neutral)
-    t_in.SetBranchAddress('m_Neutral_PID',m_Neutral_PID)
+#    t_in.SetBranchAddress('m_Neutral_PID',m_Neutral_PID)
     t_in.SetBranchAddress('m_sum_p_neutral',m_sum_p_neutral)
+    t_in.SetBranchAddress('m_sum_e_neutral',m_sum_e_neutral)
+    t_in.SetBranchAddress('m_sum_e_charged',m_sum_e_charged)
     t_in.SetBranchAddress('m_sum_p_photon',m_sum_p_photon)
     t_in.SetBranchAddress('m_p_leptonp',m_p_leptonp)
     t_in.SetBranchAddress('m_p_leptonm',m_p_leptonm)
@@ -547,6 +565,10 @@ def root_information(infile,outfile,weight,event):
 
 #JET information
     t_in.SetBranchAddress("m_n_jet",  m_n_jet)
+
+    t_in.SetBranchAddress("m_e_charged", m_e_charged)
+    t_in.SetBranchAddress("m_Neutral_PID", m_Neutral_PID)
+    t_in.SetBranchAddress("m_charged_PID", m_charged_PID)
 
     t_in.SetBranchAddress("jet_m", m_jet_m)
     t_in.SetBranchAddress("jet_p", m_jet_p)
@@ -703,9 +725,11 @@ def root_information(infile,outfile,weight,event):
 
     t_out.Branch('m_event',m_event,'m_event/I') 
     t_out.Branch('m_n_neutral',m_n_neutral,'m_n_neutral/I')
-    t_out.Branch('m_Neutral_PID',m_Neutral_PID,'m_Neutral_PID/I')
+#    t_out.Branch('m_Neutral_PID',m_Neutral_PID,'m_Neutral_PID/I')
     t_out.Branch('m_sum_p_neutral',m_sum_p_neutral,'m_sum_p_neutral[4]/F')
     t_out.Branch('m_sum_p_photon',m_sum_p_photon,'m_sum_p_photon[4]/F')
+    t_out.Branch('m_sum_e_neutral',m_sum_e_neutral,'m_sum_e_neutral/F')
+    t_out.Branch('m_sum_e_charged',m_sum_e_charged,'m_sum_e_charged/F')
     t_out.Branch('m_e_photon',m_e_photon,'m_e_photon/F')
     t_out.Branch('m_e_other',m_e_other,'m_e_other/F')		
     t_out.Branch('m_p_leptonp',m_p_leptonp,'m_p_leptonp[4]/F')
@@ -776,6 +800,10 @@ def root_information(infile,outfile,weight,event):
     t_out.Branch("m_minphi_ejet",  m_minphi_ejet,  "m_minphi_ejet/F");
 
     t_out.Branch("m_n_jet",  m_n_jet,  "m_n_jet/I")
+    
+    t_out.Branch("m_e_charged", m_e_charged)
+    t_out.Branch("m_Neutral_PID", m_Neutral_PID)
+    t_out.Branch("m_charged_PID", m_charged_PID)
 
     t_out.Branch("jet_m", m_jet_m)
     t_out.Branch("jet_p", m_jet_p)
@@ -987,6 +1015,11 @@ def root_information(infile,outfile,weight,event):
     h_evtflw.Write()
     t_out.Write()
     #		Jet  clear()
+
+    m_e_charged.clear()
+    m_Neutral_PID.clear()
+    m_charged_PID.clear()
+
     m_jet_m.clear()
     m_jet_p.clear()
     m_jet_pt.clear()
